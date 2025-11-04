@@ -1,0 +1,44 @@
+/* Align the label above the input */
+.new-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* space between rows if you add more later */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column; /* 👈 stacks label above input */
+}
+
+.form-row label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.form-row input {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #ecedf0;
+  color: var(--text);
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-row input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 6px rgba(125, 211, 252, 0.4);
+}
+.header {
+    display: flex;
+  flex-direction: column;
+  gap: 1rem; /* space between rows if you add more later */
+  max-width: 400px;
+  margin-top: 2rem;
+  
+}

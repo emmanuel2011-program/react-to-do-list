@@ -1,0 +1,62 @@
+/* formStyles.css - stack labels above inputs for clean form layout */
+
+.form-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 1rem; /* Space between form fields */
+  max-width: 400px;
+  margin: 0 auto;
+  color: #e6eef8;
+  font-family: Inter, ui-sans-serif, system-ui;
+}
+
+/* Each label + input pair */
+.form-group {
+  display: flex;
+  flex-direction: column; /* 👈 label on top of input */
+}
+
+/* Label styling */
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #9fb3c8;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #0b1220;
+  color: #e6eef8;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #7dd3fc;
+  box-shadow: 0 0 6px rgba(125, 211, 252, 0.4);
+}
+
+button {
+  background-color: #7dd3fc;
+  color: #0f1724;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #38bdf8;
+}
